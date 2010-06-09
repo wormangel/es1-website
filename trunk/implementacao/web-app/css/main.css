@@ -16,8 +16,20 @@ body {
     color: #333;
     font: 11px verdana, arial, helvetica, sans-serif;
 }
-#grailsLogo {
+#hermesLogo {
 	padding:20px;
+}
+
+menuOpcoes {
+    background-color:red;
+    color: white;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: red;
 }
 
 a:link, a:visited, a:hover {
