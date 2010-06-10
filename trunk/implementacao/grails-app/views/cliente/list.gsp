@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'cliente.label', default: 'Cliente')}" />
-        <title><g:message code="default.list.label" args="[entityName]" /></title>
+        <title>Lista de franqueados</title>
     </head>
     <body>
         <div class="nav">
@@ -13,7 +13,7 @@
             <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
         </div>
         <div class="body">
-            <h1><g:message code="default.list.label" args="[entityName]" /></h1>
+            <h1>Lista de franqueados</h1>
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
@@ -28,11 +28,11 @@
                         
                             <g:sortableColumn property="email" title="${message(code: 'cliente.email.label', default: 'Email')}" />
                         
-                            <g:sortableColumn property="ultimoLogin" title="${message(code: 'cliente.ultimoLogin.label', default: 'Ultimo Login')}" />
+                            <g:sortableColumn property="endereco" title="${message(code: 'cliente.endereco.label', default: 'Endereco')}" />
                         
                             <g:sortableColumn property="telefone" title="${message(code: 'cliente.telefone.label', default: 'Telefone')}" />
                         
-                            <g:sortableColumn property="endereco" title="${message(code: 'cliente.endereco.label', default: 'Endereco')}" />
+                            <g:sortableColumn property="celular" title="${message(code: 'cliente.celular.label', default: 'Celular')}" />
                         
                         </tr>
                     </thead>
@@ -46,11 +46,11 @@
                         
                             <td>${fieldValue(bean: clienteInstance, field: "email")}</td>
                         
-                            <td><g:formatDate date="${clienteInstance.ultimoLogin}" /></td>
+                            <td>${fieldValue(bean: clienteInstance, field: "endereco")}</td>
                         
                             <td>${fieldValue(bean: clienteInstance, field: "telefone")}</td>
                         
-                            <td>${fieldValue(bean: clienteInstance, field: "endereco")}</td>
+                            <td>${fieldValue(bean: clienteInstance, field: "celular")}</td>
                         
                         </tr>
                     </g:each>

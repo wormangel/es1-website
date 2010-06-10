@@ -44,6 +44,27 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="cliente.endereco.label" default="Endereco" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "endereco")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="cliente.telefone.label" default="Telefone" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "telefone")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="cliente.celular.label" default="Celular" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "celular")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="cliente.pedidos.label" default="Pedidos" /></td>
                             
                             <td valign="top" style="text-align: left;" class="value">
@@ -60,34 +81,6 @@
                             <td valign="top" class="name"><g:message code="cliente.ultimoLogin.label" default="Ultimo Login" /></td>
                             
                             <td valign="top" class="value"><g:formatDate date="${clienteInstance?.ultimoLogin}" /></td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="cliente.telefone.label" default="Telefone" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "telefone")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="cliente.endereco.label" default="Endereco" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "endereco")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="cliente.descricao.label" default="Descricao" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "descricao")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="cliente.celular.label" default="Celular" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "celular")}</td>
                             
                         </tr>
                     

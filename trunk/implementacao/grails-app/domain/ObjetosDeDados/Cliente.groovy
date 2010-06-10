@@ -16,6 +16,7 @@ class Cliente  {
         endereco()
         telefone()
         celular()
+        ultimoLogin(nullable:true)
     }
 
 
