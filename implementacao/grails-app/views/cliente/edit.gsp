@@ -50,6 +50,33 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="endereco"><g:message code="cliente.endereco.label" default="Endereco" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'endereco', 'errors')}">
+                                    <g:textField name="endereco" value="${clienteInstance?.endereco}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="telefone"><g:message code="cliente.telefone.label" default="Telefone" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'telefone', 'errors')}">
+                                    <g:textField name="telefone" value="${clienteInstance?.telefone}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="celular"><g:message code="cliente.celular.label" default="Celular" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'celular', 'errors')}">
+                                    <g:textField name="celular" value="${clienteInstance?.celular}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="pedidos"><g:message code="cliente.pedidos.label" default="Pedidos" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'pedidos', 'errors')}">
@@ -70,42 +97,6 @@
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'ultimoLogin', 'errors')}">
                                     <g:datePicker name="ultimoLogin" precision="day" value="${clienteInstance?.ultimoLogin}"  />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="telefone"><g:message code="cliente.telefone.label" default="Telefone" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'telefone', 'errors')}">
-                                    <g:textField name="telefone" value="${clienteInstance?.telefone}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="endereco"><g:message code="cliente.endereco.label" default="Endereco" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'endereco', 'errors')}">
-                                    <g:textField name="endereco" value="${clienteInstance?.endereco}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="descricao"><g:message code="cliente.descricao.label" default="Descricao" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'descricao', 'errors')}">
-                                    <g:textField name="descricao" value="${clienteInstance?.descricao}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="celular"><g:message code="cliente.celular.label" default="Celular" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'celular', 'errors')}">
-                                    <g:textField name="celular" value="${clienteInstance?.celular}" />
                                 </td>
                             </tr>
                         
