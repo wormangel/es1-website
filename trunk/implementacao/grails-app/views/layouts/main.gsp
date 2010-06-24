@@ -18,12 +18,12 @@
         </div>
         
         <div id="menuOpcoes" class="menuOpcoes">
-          <span class="opcaoMenu"><a href="${createLink(uri: '/')}">Home</a></span>
-          <span class="opcaoMenu"><a href="${createLink(uri: '/produto/list/')}">Ver produtos</a></span>
+          <span class="opcaoMenu"><a href="${createLink(uri: '/')}"><font color="#FFFF00">Home</font></a></span>
+          <span class="opcaoMenu"><a href="${createLink(uri: '/produto/list/')}"><font color="#FFFF00">Ver produtos</font></a></span>
           <span class="opcaoMenu">Cadastrar na newsletter</span>
-          <span class="opcaoMenu"><a href="${createLink(uri: '/pedido/create/')}">Fazer pedido</a></span>
-          <span class="opcaoMenu"><a href="${createLink(uri: '/pedido/list/')}">Verificar pedidos</a></span>
-          <span class="opcaoMenu"><a href="${createLink(uri: '/requisicaoVisita/create/')}">Solicitar visita</a></span>
+          <span class="opcaoMenu"><a href="${createLink(uri: '/pedido/create/')}"><font color="#FFFF00">Fazer pedido</font></a></span>
+          <span class="opcaoMenu"><a href="${createLink(uri: '/pedido/list/')}"><font color="#FFFF00">Verificar pedidos</font></a></span>
+          <span class="opcaoMenu"><a href="${createLink(uri: '/requisicaoVisita/create/')}"><font color="#FFFF00">Solicitar visita</font></a></span>
         </div>
         <div id="menuAdministrador" class="menuAdministrador">
           <span class="opcaoMenu"><a href="${createLink(uri: '/cliente/create/')}">Cadastrar franqueado</a></span>
