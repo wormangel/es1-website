@@ -28,7 +28,7 @@
         <div id="menuAdministrador" class="menuAdministrador">
           <span class="opcaoMenu"><a href="${createLink(uri: '/cliente/create/')}">Cadastrar franqueado</a></span>
           <span class="opcaoMenu"><a href="${createLink(uri: '/produto/create/')}">Cadastrar produto</a></span>
-          <span class="opcaoMenu">Cadastrar na newsletter</span>
+          <span class="opcaoMenu">Enviar newsletter</span>
           <span class="opcaoMenu">Imprimir relatório</span>
           <span class="opcaoMenu">Fazer backup</span>
           <span class="opcaoMenu"><a href="${createLink(uri: '/requisicaoVisita/list/')}">Verificar solicitações</a></span>
