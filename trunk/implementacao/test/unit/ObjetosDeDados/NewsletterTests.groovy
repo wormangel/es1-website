@@ -11,7 +11,10 @@ class NewsletterTests extends GrailsUnitTestCase {
         super.tearDown()
     }
 
-    void testSomething() {
+    void testCreateNewsletter() {
 
+		def n = new Newsletter(corpo:"Bom dia queridos telespectadores, esta newsletter é apenas para anunciar que estamos testando as coisas!!!")
+		assert n.corpo == "Bom dia queridos telespectadores, esta newsletter é apenas para anunciar que estamos testando as coisas!!!"
+		
     }
 }
