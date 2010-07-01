@@ -1,6 +1,6 @@
 package ObjetosDeDados
 
-class Cliente  {
+class Cliente {
     static hasMany = [pedidos: Pedido]
 
     String nome

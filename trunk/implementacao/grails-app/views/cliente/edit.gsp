@@ -32,6 +32,33 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="username"><g:message code="cliente.username.label" default="Username" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'username', 'errors')}">
+                                    <g:textField name="username" value="${clienteInstance?.username}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="passwd"><g:message code="cliente.passwd.label" default="Passwd" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'passwd', 'errors')}">
+                                    <g:textField name="passwd" value="${clienteInstance?.passwd}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                  <label for="enabled"><g:message code="cliente.enabled.label" default="Enabled" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'enabled', 'errors')}">
+                                    <g:checkBox name="enabled" value="${clienteInstance?.enabled}" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="nome"><g:message code="cliente.nome.label" default="Nome" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'nome', 'errors')}">
@@ -77,6 +104,15 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
+                                  <label for="ultimoLogin"><g:message code="cliente.ultimoLogin.label" default="Ultimo Login" /></label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'ultimoLogin', 'errors')}">
+                                    <g:datePicker name="ultimoLogin" precision="day" value="${clienteInstance?.ultimoLogin}" noSelection="['': '']" />
+                                </td>
+                            </tr>
+                        
+                            <tr class="prop">
+                                <td valign="top" class="name">
                                   <label for="pedidos"><g:message code="cliente.pedidos.label" default="Pedidos" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'pedidos', 'errors')}">
@@ -93,10 +129,10 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="ultimoLogin"><g:message code="cliente.ultimoLogin.label" default="Ultimo Login" /></label>
+                                  <label for="authorities"><g:message code="cliente.authorities.label" default="Authorities" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'ultimoLogin', 'errors')}">
-                                    <g:datePicker name="ultimoLogin" precision="day" value="${clienteInstance?.ultimoLogin}"  />
+                                <td valign="top" class="value ${hasErrors(bean: clienteInstance, field: 'authorities', 'errors')}">
+                                    
                                 </td>
                             </tr>
                         

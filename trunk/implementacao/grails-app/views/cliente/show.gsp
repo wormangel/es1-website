@@ -30,6 +30,27 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="cliente.username.label" default="Username" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "username")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="cliente.passwd.label" default="Passwd" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "passwd")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="cliente.enabled.label" default="Enabled" /></td>
+                            
+                            <td valign="top" class="value"><g:formatBoolean boolean="${clienteInstance?.enabled}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="cliente.nome.label" default="Nome" /></td>
                             
                             <td valign="top" class="value">${fieldValue(bean: clienteInstance, field: "nome")}</td>
@@ -65,6 +86,13 @@
                         </tr>
                     
                         <tr class="prop">
+                            <td valign="top" class="name"><g:message code="cliente.ultimoLogin.label" default="Ultimo Login" /></td>
+                            
+                            <td valign="top" class="value"><g:formatDate date="${clienteInstance?.ultimoLogin}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
                             <td valign="top" class="name"><g:message code="cliente.pedidos.label" default="Pedidos" /></td>
                             
                             <td valign="top" style="text-align: left;" class="value">
@@ -78,9 +106,15 @@
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="cliente.ultimoLogin.label" default="Ultimo Login" /></td>
+                            <td valign="top" class="name"><g:message code="cliente.authorities.label" default="Authorities" /></td>
                             
-                            <td valign="top" class="value"><g:formatDate date="${clienteInstance?.ultimoLogin}" /></td>
+                            <td valign="top" style="text-align: left;" class="value">
+                                <ul>
+                                <g:each in="${clienteInstance.authorities}" var="a">
+                                    <li><g:link controller="role" action="show" id="${a.id}">${a?.encodeAsHTML()}</g:link></li>
+                                </g:each>
+                                </ul>
+                            </td>
                             
                         </tr>
                     
